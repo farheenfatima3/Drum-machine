@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+body {
+  font-family: Russo One;
+  background-color: var(--primary);
+}
+:root{
+    --primary:#4C1D95;
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: white;
+    max-width:500px;
+    height: 600px;
+    border-radius: 0.5rem;
+    box-shadow:1px 5px 7px rgba(0,0,0,0.75);
+   
+}
+.display{
+    display:flex;
+    flex-wrap: wrap;
+    width:380px;
+}
+.drum-pad{
+
+    border:2px solid black;
+  color:white;
+ display:flex;
+  align-items:center;
+  justify-content:center;
+ height:100px;
+  width:100px;
+  margin:10px;
+  border-radius:10px;
+  box-shadow:1px 3px 5px 1px rgba(0,0,0,0.75);
+  font-size:30px;
+  background-color:var(--primary);
+  cursor:pointer
+}
+input[type=range]{
+    width:100%;
+
+    background-color: var(--primary);
+}
+.record{
+    margin:0.5rem;
+    width:100%;
+}
+
+.select{
+    border:1px solid black;
+    width:50px;
+    height:22px;
+    padding:1px;
+    background-color:black;
+  }
+  .inner{
+    width:23px;
+    height:19px;
+    background-color:var(--primary);
+    border:1px solid black;
+    box-sizing:border-box;
+    cursor:pointer;
+    
+  }
+  .control{
+    width:100px;
+    margin:auto;
+  }
+  .bank{
+      margin:10px;
+  }
+.displayMax{
+    color:var(--primary);
+    word-wrap: break-word;
+    font-size: 20px;
+}
+.btnOne{
+    background-color: var(--primary);
+    margin-top: 0.5rem;
+    height: 40px;
+    width: 70px;
+}
+.btnTwo{
+    background-color: var(--primary);
+    margin-top: 0.5rem;
+    height: 40px;
+    width: 70px;
+}
+.btnOne:hover{
+    opacity:0.9;
+}
+.btnTwo:hover{
+    opacity: 0.9;
+}
+
+@media(max-width:600px) and (min-width:250px){
+    .container{
+        max-width:300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        margin-top:10px;
+    }
+    .display{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .drum-pad{
+        border:1px solid black;
+  color:white;
+ display:flex;
+  align-items:center;
+  justify-content:center;
+ height:60px;
+  width:60px;
+  margin:5px;
+  border-radius:10px;
+  box-shadow:1px 3px 5px 1px rgba(0,0,0,0.75);
+  font-size:20px;
+  background-color:var(--primary);
+  cursor:pointer
+    }
+}
